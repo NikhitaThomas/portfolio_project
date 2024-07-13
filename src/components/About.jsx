@@ -42,8 +42,11 @@ const TAB_DATA = [
     id: 'certifications',
     content: (
       <ul>
-        <li>certificate1</li>
-        <li>certificate2</li>
+        <li>
+          Figma Essential Training: The Basics
+          <li className='font-thin text-sm"'>LinkedIn learning</li>
+        </li>
+        {/* <li>certificate2</li> */}
       </ul>
     ),
   },
@@ -104,12 +107,12 @@ function About() {
               Education
             </TabButton>
 
-            {/* <TabButton
-          selectTab={() => handleTabChange("certifications")}
-          active={tab === "certifications"}
-        >
-          certifications
-        </TabButton> */}
+            <TabButton
+              selectTab={() => handleTabChange('certifications')}
+              active={tab === 'certifications'}
+            >
+              certifications
+            </TabButton>
           </div>
           <div className="mt-8 px-2">
             {TAB_DATA.find((t) => t.id === tab).content}

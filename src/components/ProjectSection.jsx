@@ -54,7 +54,7 @@ function ProjectSection() {
   );
 
   return (
-    <section id="projects" className="pt-12 p-10">
+    <section id="projects" className="pt-12 p-10 min-h-screen">
       <h2 className="text-center text-4xl font-bold my-4">My Projects</h2>
       <div className="text-white flex justify-center gap-2 py-6">
         <ProjectTag
